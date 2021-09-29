@@ -1,6 +1,6 @@
 <template>
 	<view class="u-field" :class="{'u-border-top': borderTop, 'u-border-bottom': borderBottom }">
-		<view class="u-field-inner" :class="[type == 'textarea' ? 'u-textarea-inner' : '', 'u-label-postion-' + labelPosition]">
+		<view class="u-field-inner" :class="[type == 'textarea' ? 'u-textarea-inner' : '', 'u-label-position-' + labelPosition]">
 			<view class="u-label" :class="[required ? 'u-required' : '']" :style="{
 				justifyContent: justifyContent, 
 				flex: labelPosition == 'left' ? `0 0 ${labelWidth}rpx` : '1'
@@ -326,7 +326,7 @@ export default {
 	margin-left: 6rpx;
 }
 
-.u-label-postion-top {
+.u-label-position-top {
 	flex-direction: column;
 	align-items: flex-start;
 }
